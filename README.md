@@ -8,11 +8,13 @@ Official Pytorch implementation of PN-Quant, from the following paper:
 
 School of Computer Science, Wuhan University, China
 
----
 
+## Introduction
 We propose a general pulmonary nodule quantification framework named PN-Quant, which can automatically recognize lung nodules in full-size Computer Tomography (CT) scans and measure their geometric characteristics.
 
----
+
+## Quantification Results
+
 
 ## Acknowledgement
 This work is supported by National Natural Science Foundation of China (NSFC No.62172309).
