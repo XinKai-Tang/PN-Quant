@@ -14,7 +14,9 @@ We propose a general pulmonary nodule quantification framework named PN-Quant, w
 
 
 ## Quantification Results
-* **Dice Similarity Coefficient (DSC, %, ↑)**  
+
+* **Dice Similarity Coefficient (DSC, %, ↑)**
+
 | Detector  | Segmentor | LIDC-IDRI         | LNDb-19           | MSD-lung          |
 | --------- | --------- | ----------------- | ----------------- | ----------------- |
 | NoduleNet | SwinUNETR | 78.10 ± 13.17     | 72.65 ± 14.54     | 77.45 ± 13.53     |
@@ -22,13 +24,15 @@ We propose a general pulmonary nodule quantification framework named PN-Quant, w
 | SANet     | SwinUNETR | 83.69 ± 13.60     | 73.20 ± 15.48     | 78.20 ± 13.37     |
 | SANet     | 3D UX-Net | **84.39 ± 13.44** | **73.28 ± 15.49** | **79.02 ± 13.11** |
 
-* **Mean Relative Error (MRE, %, ↓)**  
+* **Mean Relative Error (MRE, %, ↓)**
+
 | Detector  | Segmentor | LIDC-IDRI       | LNDb-19          | MSD-lung        |
 | --------- | --------- | --------------- | ---------------- | --------------- |
 | NoduleNet | SwinUNETR | 18.3 ± 47.6     | 46.0 ± 120.5     | 25.7 ± 21.0     |
 | NoduleNet | 3D UX-Net | 17.0 ± 51.5     | 42.7 ± 109.2     | 25.2 ± 19.1     |
 | SANet     | SwinUNETR | 18.5 ± 48.0     | 40.1 ± 99.1      | 25.9 ± 19.6     |
 | SANet     | 3D UX-Net | **16.8 ± 50.0** | **39.5 ± 105.3** | **24.4 ± 18.7** |
+
 
 ## Acknowledgement
 This work is supported by National Natural Science Foundation of China (NSFC No.62172309).
