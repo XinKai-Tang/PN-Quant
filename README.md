@@ -1,8 +1,10 @@
-# PN-Quant
+# PN-Quant (IEEE BIBM 2024)
 
 Official Pytorch implementation of PN-Quant, from the following paper:
 
 **PN-Quant: An Automated Pulmonary Nodule Quantification Method for Full-Size CT Scans.**
+
+[BIBM 2024](https://www.ieeebibm.org/BIBM2024/) (Accepted at 16 Aug. 2024, [Regular Paper](https://ieeexplore.ieee.org/document/))
 
 [Xinkai Tang](https://xinkai-tang.github.io), Zhiyu Zhu, Feng Liu, *et al.*
 
@@ -10,7 +12,10 @@ School of Computer Science, Wuhan University, China
 
 
 ## Introduction
-We propose a general pulmonary nodule quantification framework named PN-Quant, which can automatically recognize lung nodules in full-size Computer Tomography (CT) scans and measure their geometric characteristics.
+
+![](figures/PN-Quant.jpg)
+
+We propose a general pulmonary nodule quantification framework named PN-Quant. It integrates a detection module, a segmentation module, and a quantification module to enable automated identification and precise measurement of lung nodules in full-size Computer Tomography (CT) scans, which facilitates the extraction of geometric characteristics, including volume, surface area, mass, sphericity, compactness, and elongation, offering valuable quantitative data for accurate nodule assessment.
 
 
 ## Quantification Results
@@ -43,8 +48,11 @@ If you find this repository helpful, please consider citing:
 ```
 @article{tang2024pn,
   title={PN-Quant: An Automated Pulmonary Nodule Quantification Method for Full-Size CT Scans},
-  author={Tang, Xinkai and Zhu, zhiyu and Liu, Feng and Huang, Wencai and Zou, Jiani},
-  year={2024}
+  author={Tang, Xinkai and Zhu, zhiyu and Liu, Feng and Chen, Yi Ping Phoebe and Huang, Wencai and Zou, Jiani},
+  booktitle={2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+  pages={},
+  year={2024},
+  organization={IEEE}
 }
 ```
 ATTENTION: This paper has not been publicly published yet!!!
