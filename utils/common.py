@@ -132,8 +132,8 @@ def get_seg_model(args: ArgumentParser, pretrained: bool = True):
     seg_model = DataParallel(seg_model).to(args.device)
 
     if pretrained:
-        path = os.path.join(args.model_save_dir, args.seg_model, 
-                            args.trained_seg_model)
+        path = os.path.join(args.model_save_dir, "LUNA-16",
+                            args.seg_model,  args.trained_seg_model)
         state_dict = torch.load(path)
         seg_model.load_state_dict(state_dict["net"])
         print("LOAD checkpoints from `%s`..." % path)
@@ -163,8 +163,8 @@ def get_det_model(args: ArgumentParser, pretrained: bool = True):
     det_model = det_model.to(args.device)
 
     if pretrained:
-        path = os.path.join(args.model_save_dir, args.det_model,
-                            args.trained_det_model)
+        path = os.path.join(args.model_save_dir, "LUNA-16",
+                            args.det_model, args.trained_det_model)
         state_dict = torch.load(path, map_location=args.device)
         det_model.load_state_dict(state_dict["state_dict"])
         print("LOAD checkpoints from `%s`..." % path)
@@ -173,7 +173,7 @@ def get_det_model(args: ArgumentParser, pretrained: bool = True):
 
 def merge_roi(result: pd.DataFrame,
               min_prob: float = 0.5,
-              roi_size: tuple = (64, 64, 64)):
+              roi_size: tuple = (36, 36, 36)):
     ''' merge near ROI. '''
     threshold = min(roi_size) ** 2      # 设置最小平方欧式距离
     det_df = result[result["prob"] > min_prob].copy()

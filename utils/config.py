@@ -9,7 +9,7 @@ setproctitle.setproctitle("txk-NoduleQua")
 parser = ArgumentParser(description="Image Quantification of Lung Nodules")
 parser.add_argument("--det_model", type=str, default="NoduleNet", 
                     help="detection model (eg: SANet, NoduleNet)")
-parser.add_argument("--seg_model", type=str, default="SwinUNETR", 
+parser.add_argument("--seg_model", type=str, default="UXNet", 
                     help="segmentation model (eg: UXNet, SwinUNETR)")
 parser.add_argument("--device", type=Device, help="runtime device",
                     default=Device("cuda" if cuda.is_available() else "cpu"))
@@ -22,12 +22,12 @@ parser.add_argument("--image_dir", type=str, default="images",
 parser.add_argument("--mask_dir", type=str, default="masks",
                     help="name of masks filefolder")
 
-parser.add_argument("--model_save_dir", type=str, default="../NoduleQua/pretrained",
+# best: NoduleNet-2  SANet-2  SwinUNETR-1  UXNet-0
+parser.add_argument("--model_save_dir", type=str, default="../MODELS",
                     help="save path of trained models")
-# best: NoduleNet-2  SANet-2  SwinUNETR-1  UXNet-4
 parser.add_argument("--trained_det_model", type=str, default="NoduleNet-2.ckpt",
                     help="filename of pretrained detection model")
-parser.add_argument("--trained_seg_model", type=str, default="best_model_f1.pth",
+parser.add_argument("--trained_seg_model", type=str, default="best_model_f0.pth",
                     help="filename of pretrained segmentation model")
 
 parser.add_argument("--log_save_dir", type=str, default="logs",
