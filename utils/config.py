@@ -15,7 +15,7 @@ parser.add_argument("--device", type=Device, help="runtime device",
                     default=Device("cuda" if cuda.is_available() else "cpu"))
 
 ############################ save path ############################
-parser.add_argument("--data_root", type=str, default="../datasets/MSD-lung",
+parser.add_argument("--data_root", type=str, default="datasets/MSD-lung",
                     help="save path of test dataset")
 parser.add_argument("--image_dir", type=str, default="images",
                     help="name of image filefloder")
@@ -23,7 +23,7 @@ parser.add_argument("--mask_dir", type=str, default="masks",
                     help="name of masks filefolder")
 
 # best: NoduleNet-2  SANet-2  SwinUNETR-1  UXNet-0
-parser.add_argument("--model_save_dir", type=str, default="../MODELS",
+parser.add_argument("--model_save_dir", type=str, default="MODELS",
                     help="save path of trained models")
 parser.add_argument("--trained_det_model", type=str, default="NoduleNet-2.ckpt",
                     help="filename of pretrained detection model")
