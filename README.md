@@ -2,13 +2,18 @@
 
 Official Pytorch implementation of PN-Quant, from the following paper:
 
-**PN-Quant: An Automated Pulmonary Nodule Quantification Method for Full-Size CT Scans.**
+**PN-Quant: An Automated Pulmonary Nodule Quantification Method for Full-Size CT Scans**
 
 [BIBM 2024](https://www.ieeebibm.org/BIBM2024/) (Accepted at 16 Aug. 2024, [Regular Paper](https://ieeexplore.ieee.org/document/10822571))
 
-[Xinkai Tang](https://xinkai-tang.github.io), Zhiyu Zhu, Feng Liu, *et al.*
+[Xinkai Tang](https://xinkai-tang.github.io)<sup>1+</sup>, Zhiyu Zhu<sup>1+</sup>, Shengjuan Guo<sup>2#</sup>, Feng Liu<sup>1#</sup>, Yi Ping Phoebe Chen<sup>3</sup>, Wencai Huang<sup>4</sup>, Jiani Zou<sup>4</sup>
 
-School of Computer Science, Wuhan University, China
+> <sup>1</sup> School of Computer Science, Wuhan University, China .  
+<sup>2</sup> School of Primary Education, Wuhan City Polytechnic, China .  
+<sup>3</sup> Department of Computer Science and Information Technology, La Trobe University, Australia .  
+<sup>4</sup> Department of Radiology, General Hospital of Central Theater Command of the PLA, China .  
+<sup>+</sup> Tang and Zhu are the co-first authors.  
+<sup>#</sup> Guo and Liu are the corresponding authors.  
 
 
 ## Introduction
@@ -19,6 +24,7 @@ We propose a general pulmonary nodule quantification framework named PN-Quant. I
 
 
 ## Quantification Results
+Comparison of quantification pipelines in terms of average Dice Similarity Coefficient (DSC, %) and Mean Relative Error (MRE, %) on datasets LIDC-IDRI, LNDb-19, and MSD-lung. In this table, all the metric values are described in "mean ± standard deviation".
 
 * **Dice Similarity Coefficient (DSC, %, ↑)**
 
