@@ -6,14 +6,14 @@ Official Pytorch implementation of PN-Quant, from the following paper:
 
 [BIBM 2024](https://www.ieeebibm.org/BIBM2024/) (Accepted at 16 Aug. 2024, [Regular Paper](https://ieeexplore.ieee.org/document/10822571))
 
-[Xinkai Tang](https://xinkai-tang.github.io)<sup>1+</sup>, Zhiyu Zhu<sup>1+</sup>, Shengjuan Guo<sup>2#</sup>, Feng Liu<sup>1#</sup>, Yi Ping Phoebe Chen<sup>3</sup>, Wencai Huang<sup>4</sup>, Jiani Zou<sup>4</sup>
+[Xinkai Tang](https://xinkai-tang.github.io)<sup>1📝</sup>, Zhiyu Zhu<sup>1📝</sup>, Shengjuan Guo<sup>2📧</sup>, Feng Liu<sup>1📧</sup>, Yi Ping Phoebe Chen<sup>3</sup>, Wencai Huang<sup>4</sup>, Jiani Zou<sup>4</sup>
 
 > <sup>1</sup> School of Computer Science, Wuhan University, China .  
 <sup>2</sup> School of Primary Education, Wuhan City Polytechnic, China .  
 <sup>3</sup> Department of Computer Science and Information Technology, La Trobe University, Australia .  
 <sup>4</sup> Department of Radiology, General Hospital of Central Theater Command of the PLA, China .  
-<sup>+</sup> Tang and Zhu are the co-first authors.  
-<sup>#</sup> Guo and Liu are the corresponding authors.  
+<sup>📝</sup> Xinkai Tang and Zhiyu Zhu are the co-first authors.  
+<sup>📧</sup> Shengjuan Guo and Feng Liu are the corresponding authors.  
 
 
 ## Introduction
